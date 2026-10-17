@@ -1,4 +1,4 @@
-# stage2-screener
+# Indian Minervini Stock Screener
 
 Systematic **Minervini Trend Template + Weinstein Stage Analysis** screening for Indian equities (Nifty 500), with four screens sharing one data layer and one set of tested indicator functions.
 
