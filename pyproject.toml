@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stage2-screener"
+version = "1.0.0"
+description = "Minervini / Weinstein Stage 2 equity screens for NSE (Nifty 500)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["pandas>=2.0", "numpy>=1.24", "yfinance>=0.2.40", "requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+stage2-screener = "stage2_screener.cli:main"
+
+[tool.setuptools]
+packages = ["stage2_screener"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
